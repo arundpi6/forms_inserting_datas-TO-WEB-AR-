@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert_webpage</title>
+</head>
+<body>
+    <center>
+        <h1>INSERTING DATAS INTO WEBPAGE_TABLE</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="tn">Topic_Name</label>
+                <input type="text" name="tn" id="tn"> <br> <br>
+            <label for="na">Name</label>
+                <input type="text" name="na" id="na"> <br> <br>
+            <label for="url">URL</label>
+                <input type="url" name="url" id="url"> <br> <br>
+
+            <input type="submit">
+        </form>
+    </center>
+</body>
+</html>
